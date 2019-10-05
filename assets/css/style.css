@@ -160,8 +160,141 @@ svg {
   src: local("ProximaNova-RegularCondensed"), url("https://nomail.com.ua/files/woff/dc38e71c06219d82fe9ec4c3375e98af.woff") format("woff");
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
 body {
   font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
   background: #252525;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #FFFFFF;
+  border: none;
+  font-family: FuturaDemiC;
+  font-size: 13px;
+  line-height: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.btn:hover {
+  background-color: #725c3a;
+}
+
+.btn-link,
+.btn-link:hover {
+  background-color: unset;
+}
+
+.btn-secondary {
+  border: 1px solid #FFFFFF;
+  background-color: unset;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding: 18px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.header .header-title {
+  font-family: FuturaDemiC;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.header .btn-link {
+  font-family: FuturaDemiC;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.introduction {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  height: 476px;
+  color: #FFFFFF;
+}
+
+.introduction .introduction-substrate {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background-image: url("/assets/img/bg-001.jpg");
+  background-size: cover;
+}
+
+.introduction .introduction-inner {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 85px 18px 61px 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.introduction .introduction-inner .introduction-title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 23px;
+  line-height: 132.83%;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.introduction .introduction-inner .introduction-title em {
+  color: #E3B873;
+}
+
+.introduction .introduction-inner .introduction-description {
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 135.84%;
+  margin-bottom: 32px;
+}
+
+.introduction .introduction-inner .btn {
+  height: 51px;
+  width: 100%;
+}
+
+.introduction .introduction-inner .btn-primary {
+  margin-bottom: 26px;
 }
 /*# sourceMappingURL=style.css.map */

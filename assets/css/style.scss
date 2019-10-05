@@ -1,7 +1,124 @@
 @import 'reset';
 @import 'fonts';
 
+$color-burlywood: #E3B873;
+
+* {
+	box-sizing: border-box;
+	width: 100%;
+}
+
 body {
-    font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
-    background: #252525;
+	font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+	background: #252525;
+}
+
+.btn {
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: $color-burlywood;
+	color: #FFFFFF;
+	border: none;
+	font-family: FuturaDemiC;
+	font-size: 13px;
+	line-height: 15px;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	transition: 0.2s linear;
+}
+
+.btn:hover {
+	background-color: $color-burlywood*0.5;
+}
+
+.btn-link,
+.btn-link:hover {
+	background-color: unset;
+}
+
+.btn-primary {}
+
+.btn-secondary {
+	border: 1px solid #FFFFFF;
+	background-color: unset;
+}
+
+// header
+.header {
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 18px;
+	justify-content: space-between;
+	align-items: center;
+	justify-items: center;
+	width: 100%;
+	align-items: center;
+	justify-items: center;
+
+	.header-title {
+		font-family: FuturaDemiC;
+		font-size: 12px;
+		line-height: 14px;
+		text-transform: uppercase;
+		color: $color-burlywood;
+	}
+
+	.btn-link {
+		font-family: FuturaDemiC;
+		font-size: 12px;
+		line-height: 14px;
+	}
+}
+
+// introduction
+.introduction {
+	display: grid;
+	grid-template-columns: 1fr;
+	height: 476px;
+	color: #FFFFFF;
+
+	.introduction-substrate {
+		grid-column: 1;
+		grid-row: 1;
+		background-image: url('/assets/img/bg-001.jpg');
+		background-size: cover;
+	}
+
+	.introduction-inner {
+		grid-column: 1;
+		grid-row: 1;
+		background: rgba(0, 0, 0, 0.7);
+		padding: 85px 18px 61px 18px;
+		display: flex;
+		flex-direction: column;
+
+		.introduction-title {
+			font-family: 'Yeseva One', cursive;
+			font-size: 23px;
+			line-height: 132.83%;
+			text-transform: uppercase;
+			margin-bottom: 16px;
+
+			em {
+				color: $color-burlywood;
+			}
+		}
+
+		.introduction-description {
+			font-family: FuturaBookC;
+			font-size: 18px;
+			line-height: 135.84%;
+			margin-bottom: 32px;
+		}
+
+		.btn {
+			height: 51px;
+			width: 100%;
+		}
+
+		.btn-primary {
+			margin-bottom: 26px;
+		}
+	}
 }
