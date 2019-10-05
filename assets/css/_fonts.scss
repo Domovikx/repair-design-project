@@ -1,0 +1,32 @@
+// font-family: 'Yeseva One', cursive;
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
+
+// font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: 'FuturaDemiC';
+    src: local('FuturaDemiC'), url('https://nomail.com.ua/files/woff/fa7892c650d8237d04043b1cf3cdc49f.woff') format('woff');
+}
+
+// font-family: 'FuturaDemiC-Italic', Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: 'FuturaDemiC-Italic';
+    src: local('FuturaDemiC-Italic'), url('https://nomail.com.ua/files/woff/b3b0f9ea4418fc384826ced0fbdf36ac.woff') format('woff');
+}
+
+// font-family:'FuturaBookC', Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: 'FuturaBookC';
+    src: local('FuturaBookC'), url('https://nomail.com.ua/files/woff/363c763618808869720c6ca7b4059566.woff') format('woff');
+}
+
+// font-family:'FuturaMediumC', Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: 'FuturaMediumC';
+    src: local('FuturaMediumC'), url('https://nomail.com.ua/files/woff/047c56cc37e017c6be47821ec5cac9de.woff') format('woff');
+}
+
+// font-family:'ProximaNova-RegularCondensed', Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: 'ProximaNova-RegularCondensed';
+    src: local('ProximaNova-RegularCondensed'), url('https://nomail.com.ua/files/woff/dc38e71c06219d82fe9ec4c3375e98af.woff') format('woff');
+}
