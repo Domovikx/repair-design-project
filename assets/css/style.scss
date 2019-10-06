@@ -2,6 +2,7 @@
 @import 'fonts';
 
 $color-burlywood: #E3B873;
+$color-burlywood-op: #E3B87388;
 
 * {
 	box-sizing: border-box;
@@ -29,7 +30,7 @@ body {
 }
 
 .btn:hover {
-	background-color: $color-burlywood*0.5;
+	background: $color-burlywood-op;
 }
 
 .btn-link,
