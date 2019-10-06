@@ -130,11 +130,6 @@ table {
   border-spacing: 0;
 }
 
-svg {
-  width: 18px;
-  height: 18px;
-}
-
 @font-face {
   font-family: 'FuturaDemiC';
   src: local("FuturaDemiC"), url("https://nomail.com.ua/files/woff/fa7892c650d8237d04043b1cf3cdc49f.woff") format("woff");
@@ -169,6 +164,18 @@ svg {
 body {
   font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
   background: #252525;
+}
+
+h2 {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 138.6%;
+  text-align: center;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873;
 }
 
 .btn {
