@@ -232,7 +232,7 @@ h2 {
   justify-items: center;
 }
 
-.header .header-title {
+.header .header__title {
   font-family: FuturaDemiC;
   font-size: 12px;
   line-height: 14px;
@@ -240,7 +240,7 @@ h2 {
   color: #E3B873;
 }
 
-.header .btn-link {
+.header .btn__link {
   font-family: FuturaDemiC;
   font-size: 12px;
   line-height: 14px;
@@ -255,7 +255,7 @@ h2 {
   color: #FFFFFF;
 }
 
-.introduction .introduction-substrate {
+.introduction .introduction__substrate {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -264,7 +264,7 @@ h2 {
   background-size: cover;
 }
 
-.introduction .introduction-inner {
+.introduction .introduction__inner {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -280,7 +280,7 @@ h2 {
           flex-direction: column;
 }
 
-.introduction .introduction-inner .introduction-title {
+.introduction .introduction__inner .introduction__title {
   font-family: 'Yeseva One', cursive;
   font-size: 23px;
   line-height: 132.83%;
@@ -288,23 +288,23 @@ h2 {
   margin-bottom: 16px;
 }
 
-.introduction .introduction-inner .introduction-title em {
+.introduction .introduction__inner .introduction__title em {
   color: #E3B873;
 }
 
-.introduction .introduction-inner .introduction-description {
+.introduction .introduction__inner .introduction__description {
   font-family: FuturaBookC;
   font-size: 18px;
   line-height: 135.84%;
   margin-bottom: 32px;
 }
 
-.introduction .introduction-inner .btn {
+.introduction .introduction__inner .btn {
   height: 51px;
   width: 100%;
 }
 
-.introduction .introduction-inner .btn-primary {
+.introduction .introduction__inner .btn-primary {
   margin-bottom: 26px;
 }
 
@@ -319,7 +319,7 @@ h2 {
   padding: 36px 18px 0 18px;
 }
 
-.completed .completed-title {
+.completed .completed__title {
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
@@ -331,7 +331,7 @@ h2 {
   margin-bottom: 22px;
 }
 
-.completed .completed-description {
+.completed .completed__description {
   font-family: FuturaBookC;
   font-size: 14px;
   line-height: 158.48%;
@@ -339,7 +339,7 @@ h2 {
   margin-bottom: 36px;
 }
 
-.completed .completed-slider {
+.completed .completed__slider {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -352,14 +352,14 @@ h2 {
   margin-bottom: 36px;
 }
 
-.completed .completed-slider .img {
+.completed .completed__slider .img {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
 }
 
-.completed .completed-slider .btn-slider-left {
+.completed .completed__slider .btn-slider-left {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -367,7 +367,7 @@ h2 {
   margin: 0 0 0 14px;
 }
 
-.completed .completed-slider .btn-slider-right {
+.completed .completed__slider .btn-slider-right {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -375,21 +375,21 @@ h2 {
   margin: 0 14px 0 auto;
 }
 
-.completed .completed-slider .btn-slider-left,
-.completed .completed-slider .btn-slider-right {
+.completed .completed__slider .btn-slider-left,
+.completed .completed__slider .btn-slider-right {
   width: 36px;
   height: 36px;
   border-radius: 50%;
 }
 
-.completed .completed-slider .btn-slider-left .icon,
-.completed .completed-slider .btn-slider-right .icon {
+.completed .completed__slider .btn-slider-left img,
+.completed .completed__slider .btn-slider-right img {
   height: 14px;
   width: 8px;
   margin: 0 auto;
 }
 
-.completed .completed-properties {
+.completed .completed__properties {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -398,7 +398,7 @@ h2 {
       grid-template-rows: auto auto;
 }
 
-.completed .completed-properties li h3 {
+.completed .completed__properties li h3 {
   font-family: Yeseva One;
   font-size: 14px;
   line-height: 138.6%;
@@ -407,11 +407,130 @@ h2 {
   margin-bottom: 12px;
 }
 
-.completed .completed-properties li p {
+.completed .completed__properties li p {
   font-family: FuturaBookC;
   font-size: 14px;
   line-height: 135.84%;
   color: #FFFFFF;
   margin-bottom: 27px;
+}
+
+.control {
+  display: -ms-grid;
+  display: grid;
+  padding: 27px 18px;
+}
+
+.control .control__title {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.control .control__img {
+  height: 28px;
+  width: 114px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.control .control__video {
+  max-height: 207px;
+  max-width: 340px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+.control .control__img-line {
+  width: 55px;
+  height: 1.54px;
+  margin: 0 auto;
+  margin-bottom: 21px;
+}
+
+.control .control__description {
+  font-family: FuturaBookC;
+  font-size: 14px;
+  line-height: 169.8%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 39px;
+}
+
+.control .control__form label {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.control .control__form input {
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 138.72%;
+  color: #FFFFFF;
+  border: 0;
+  background: unset;
+}
+
+.control .control__form ::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.control .control__form :-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.control .control__form ::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.control .control__form ::placeholder {
+  color: #FFFFFF;
+}
+
+.control .control__form .control__form-name,
+.control .control__form .control__form-tel {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.control .control__form .control__form-name {
+  margin-bottom: 63px;
+}
+
+.control .control__form .control__form-tel {
+  margin-bottom: 26px;
+}
+
+.control .control__form .control__form-checkbox-agree {
+  width: auto;
+  margin-bottom: 63px;
+}
+
+.control .control__form label[for="control__form-checkbox-agree"] {
+  color: #FFFFFF;
+}
+
+.control .control__form .btn {
+  height: 51px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #FFFFFF;
+  border: none;
+  font-family: FuturaDemiC;
+  font-size: 13px;
+  line-height: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.control .control__form .btn:hover {
+  background: #E3B87388;
 }
 /*# sourceMappingURL=style.css.map */
