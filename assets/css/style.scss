@@ -15,6 +15,10 @@ body {
 	font-size: 14px;
 }
 
+.checkbox {
+	width: auto;
+}
+
 h2 {
 	font-family: Yeseva One;
 	font-style: normal;
@@ -28,6 +32,7 @@ h2 {
 
 	color: $color-burlywood;
 }
+
 
 .btn {
 	text-decoration: none;
@@ -346,5 +351,18 @@ h2 {
 			background: $color-burlywood-op;
 		}
 	}
+}
 
+
+
+
+
+// map
+.map {
+	.map__wrap {
+		height: 255px;
+		max-width: 340px;
+		width: 100%;
+		margin: 0 auto;
+	}
 }
