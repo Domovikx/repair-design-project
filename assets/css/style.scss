@@ -76,6 +76,7 @@ h2 {
 	align-items: center;
 	justify-items: center;
 	width: 100%;
+	height: 57px;
 	align-items: center;
 	justify-items: center;
 
@@ -101,12 +102,16 @@ h2 {
 	grid-template-columns: 1fr;
 	height: 476px;
 	color: #FFFFFF;
+	grid-template-rows: 51px auto;
+
 
 	.introduction__substrate {
 		grid-column: 1;
 		grid-row: 1;
 		background-image: url('/assets/img/bg-001.jpg');
+		background-position: -170px;
 		background-size: cover;
+		height: inherit;
 	}
 
 	.introduction__inner {
@@ -114,8 +119,13 @@ h2 {
 		grid-row: 1;
 		background: rgba(0, 0, 0, 0.7);
 		padding: 85px 18px 61px 18px;
-		display: flex;
+		// display: flex;
+		// flex-direction: column;
+
 		flex-direction: column;
+		display: grid;
+		grid-template-rows: 73px 129px auto;
+		height: inherit;
 
 		.introduction__title {
 			font-family: 'Yeseva One', cursive;
@@ -123,6 +133,9 @@ h2 {
 			line-height: 132.83%;
 			text-transform: uppercase;
 			margin-bottom: 16px;
+			color: #FFFFFF;
+			text-align: left;
+			letter-spacing: 0.05px;
 
 			em {
 				color: $color-burlywood;
@@ -134,6 +147,7 @@ h2 {
 			font-size: 18px;
 			line-height: 135.84%;
 			margin-bottom: 32px;
+			padding-right: 40px;
 		}
 
 		.btn {
