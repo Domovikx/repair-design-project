@@ -328,10 +328,10 @@ h2 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  -ms-grid-rows: 85px 126px 277px 173px;
+      grid-template-rows: 85px 126px 277px 173px;
   color: #FFFFFF;
-  padding: 36px 18px 0 18px;
+  padding: 34px 18px 0 18px;
 }
 
 .completed .completed__title {
@@ -343,7 +343,6 @@ h2 {
   text-align: center;
   letter-spacing: -0.07em;
   text-transform: uppercase;
-  margin-bottom: 22px;
 }
 
 .completed .completed__description {
@@ -351,7 +350,8 @@ h2 {
   font-size: 14px;
   line-height: 158.48%;
   text-align: center;
-  margin-bottom: 36px;
+  padding: 0 10px;
+  letter-spacing: 0.1px;
 }
 
 .completed .completed__slider {
@@ -407,8 +407,8 @@ h2 {
 .completed .completed__properties {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 160px 1fr;
+      grid-template-columns: 160px 1fr;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
 }
@@ -434,11 +434,13 @@ h2 {
   display: -ms-grid;
   display: grid;
   padding: 27px 18px;
+  -ms-grid-rows: 49px 70px 234px 18px 171px;
+      grid-template-rows: 49px 70px 234px 18px 171px;
 }
 
 .control .control__title {
   color: #FFFFFF;
-  margin-bottom: 20px;
+  font-size: 25px;
 }
 
 .control .control__img {
@@ -449,8 +451,8 @@ h2 {
 }
 
 .control .control__video {
-  max-height: 207px;
-  max-width: 340px;
+  height: 207px;
+  width: 340px;
   margin: 0 auto;
   margin-bottom: 28px;
 }
@@ -465,17 +467,18 @@ h2 {
 .control .control__description {
   font-family: FuturaBookC;
   font-size: 14px;
-  line-height: 169.8%;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 39px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
 }
 
 .control .control__form label {
   font-family: FuturaBookC;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 18px;
   color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.5px;
 }
 
 .control .control__form input {
@@ -518,7 +521,8 @@ h2 {
 
 .control .control__form .control__form-checkbox-agree {
   width: auto;
-  margin-bottom: 63px;
+  margin-bottom: 67px;
+  letter-spacing: 0.5px;
 }
 
 .control .control__form label[for="control__form-checkbox-agree"] {
@@ -547,6 +551,108 @@ h2 {
 
 .control .control__form .btn:hover {
   background: #E3B87388;
+}
+
+.control .control__form .control__btn-submit {
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+.repair {
+  position: relative;
+  top: -51px;
+  z-index: -1;
+  background: #FFFFFF;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 108px 68px;
+      grid-template-rows: 108px 68px;
+  padding: 18px;
+}
+
+.repair .repair__title {
+  margin-top: 62px;
+  color: #181818;
+  letter-spacing: normal;
+}
+
+.repair .repair__img {
+  height: 28px;
+  width: 114px;
+  margin: 0 auto;
+}
+
+.repair .repair__article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 190px 80px 70px;
+      grid-template-columns: 190px 80px 70px;
+  -ms-grid-rows: 223px 142px 79px 20px 20px;
+      grid-template-rows: 223px 142px 79px 20px 20px;
+  padding-bottom: 59px;
+}
+
+.repair .repair__article .repair__article-img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/span 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/span 2;
+}
+
+.repair .repair__article .repair__article-img:nth-child(2) {
+  background: #E3B873;
+}
+
+.repair .repair__article .repair__description {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/span 3;
+  background: #FFFFFF;
+  font-family: "FuturaBookC";
+  font-size: 13px;
+  line-height: 22px;
+  color: #959595;
+  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+  padding: 21px 0 0 31px;
+}
+
+.repair .repair__article .repair__description .repair__article-title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #363636;
+  margin-bottom: 5px;
+}
+
+.repair .repair__article .repair__article-price {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/span 1;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/span 2;
+  background: #E3B873;
+  color: #FFFFFF;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 .map .map__wrap {

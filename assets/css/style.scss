@@ -166,10 +166,11 @@ h2 {
 .completed {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto;
+	// grid-template-rows: auto;
+	grid-template-rows: 85px 126px 277px 173px;
 
 	color: #FFFFFF;
-	padding: 36px 18px 0 18px;
+	padding: 34px 18px 0 18px;
 
 	.completed__title {
 		font-family: Yeseva One;
@@ -181,8 +182,6 @@ h2 {
 		text-align: center;
 		letter-spacing: -0.07em;
 		text-transform: uppercase;
-
-		margin-bottom: 22px;
 	}
 
 	.completed__description {
@@ -190,8 +189,9 @@ h2 {
 		font-size: 14px;
 		line-height: 158.48%;
 		text-align: center;
+		padding: 0 10px;
 
-		margin-bottom: 36px;
+		letter-spacing: 0.1px;
 	}
 
 	.completed__slider {
@@ -236,7 +236,8 @@ h2 {
 
 	.completed__properties {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		// grid-template-columns: 1fr 1fr;
+		grid-template-columns: 160px 1fr;
 		grid-template-rows: auto auto;
 
 		li {
@@ -265,10 +266,11 @@ h2 {
 .control {
 	display: grid;
 	padding: 27px 18px;
+	grid-template-rows: 49px 70px 234px 18px 171px;
 
 	.control__title {
 		color: #FFFFFF;
-		margin-bottom: 20px;
+		font-size: 25px;
 	}
 
 	.control__img {
@@ -279,8 +281,8 @@ h2 {
 	}
 
 	.control__video {
-		max-height: 207px;
-		max-width: 340px;
+		height: 207px;
+		width: 340px;
 		margin: 0 auto;
 		margin-bottom: 28px;
 	}
@@ -295,10 +297,10 @@ h2 {
 	.control__description {
 		font-family: FuturaBookC;
 		font-size: 14px;
-		line-height: 169.8%;
 		text-align: center;
 		color: #FFFFFF;
-		margin-bottom: 39px;
+		line-height: 24px;
+		letter-spacing: 0.1px;
 	}
 
 	.control__form {
@@ -306,8 +308,9 @@ h2 {
 		label {
 			font-family: FuturaBookC;
 			font-size: 15px;
-			line-height: 20px;
+			line-height: 18px;
 			color: rgba(255, 255, 255, 0.5);
+			letter-spacing: 0.5px;
 		}
 
 		input {
@@ -338,7 +341,8 @@ h2 {
 
 		.control__form-checkbox-agree {
 			width: auto;
-			margin-bottom: 63px;
+			margin-bottom: 67px;
+			letter-spacing: 0.5px;
 		}
 
 		label[for="control__form-checkbox-agree"] {
@@ -364,8 +368,104 @@ h2 {
 		.btn:hover {
 			background: $color-burlywood-op;
 		}
+
+		.control__btn-submit {
+			padding-top: 5px;
+			font-size: 15px;
+		}
 	}
 }
+
+
+// repair
+.repair {
+	position: relative;
+	top: -51px;
+	z-index: -1;
+	background: #FFFFFF;
+
+	display: grid;
+	grid-template-rows: 108px 68px;
+
+	padding: 18px;
+
+	.repair__title {
+		margin-top: 62px;
+		color: #181818;
+		letter-spacing: normal;
+	}
+
+	.repair__img {
+		height: 28px;
+		width: 114px;
+		margin: 0 auto;
+	}
+
+	.repair__article {
+		display: grid;
+		grid-template-columns: 190px 80px 70px;
+		grid-template-rows: 223px 142px 79px 20px 20px;
+		// margin-bottom: 59px;
+		padding-bottom: 59px;
+
+		.repair__article-img {
+			grid-column: 1/span 3;
+			grid-row: 1/span 2;
+		}
+		.repair__article-img:nth-child(2){
+background: #E3B873;
+		}
+
+		.repair__description {
+			grid-column: 1/span 2;
+			grid-row: 2/span 3;
+			background: #FFFFFF;
+
+			font-family: "FuturaBookC";
+			font-size: 13px;
+			line-height: 22px;
+			color: #959595;
+			box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+
+			padding: 21px 0 0 31px;
+
+			.repair__article-title {
+				font-family: "Yeseva One";
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 21px;
+				color: #363636;
+				margin-bottom: 5px;
+			}
+		}
+
+		.repair__article-price {
+			grid-column: 1/span 1;
+			grid-row: 4/span 2;
+
+			background: $color-burlywood;
+			color: #FFFFFF;
+
+			display: grid;
+			align-items: center;
+			justify-items: center;
+
+			font-family: Yeseva One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 21px;
+
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+
+
+
 
 
 

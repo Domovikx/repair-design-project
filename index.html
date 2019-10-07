@@ -121,14 +121,13 @@
 					placeholder="What is your name:">
 
 				<label for="control__form-tel">Number</label>
-				<input type="tel" name="tel" id="control__form-tel" class="control__form-tel"
-					placeholder="Your phone number:">
+				<input type="tel" name="tel" id="control__form-tel" class="control__form-tel" placeholder="Your phone number:">
 
 				<input type="checkbox" name="checkbox-agree" id="control__form-checkbox-agree"
 					class="control__form-checkbox-agree">
 				<label for="control__form-checkbox-agree">I agree to the processing of personal data</label>
 
-				<input class="btn btn-primary" type="submit" value="submit">
+				<input class="control__btn-submit btn btn-primary" type="submit" value="submit">
 
 			</form>
 
@@ -151,43 +150,46 @@
 		<!-- repair -->
 		<section class="repair">
 
-			<h2>TYPES OF REPAIR</h2>
-			<img src="assets/svg/signboard-repair.svg" alt="svg">
+			<h2 class="repair__title">TYPES OF REPAIR</h2>
+			<img class="repair__img" src="assets/svg/signboard-repair.svg" alt="svg">
 
 
 			<!-- article 1 -->
 			<article class="repair__article">
-				<img class="repair__article-img" src="assets/img/image-repair-1.jpg" alt="repair-img">
+				<img class="repair__article-img" src="assets/img/image-repair-1.jpg" alt="img">
 
-				<h4 class="repair__article-title">Redecorating</h4>
-				<ul>
-					<li>• Dismantling of old coatings</li>
-					<li>• Wallpapering</li>
-					<li>• Painting walls and ceilings</li>
-					<li>• Laying flooring</li>
-					<li>• Replacing plumbing</li>
-					<li>• Replacing sockets and switches</li>
-					<li>• Replacing doors</li>
-				</ul>
-
+				<div class="repair__description">
+					<h3 class="repair__article-title">Redecorating</h3>
+					<ul>
+						<li>• Dismantling of old coatings</li>
+						<li>• Wallpapering</li>
+						<li>• Painting walls and ceilings</li>
+						<li>• Laying flooring</li>
+						<li>• Replacing plumbing</li>
+						<li>• Replacing sockets and switches</li>
+						<li>• Replacing doors</li>
+					</ul>
+				</div>
 				<div class="repair__article-price">from 900 rub / m2</div>
 			</article>
 
 
 			<!-- article 2 -->
 			<article class="repair__article">
-				<img class="repair__article-img" src="assets/img/image-repair-2.jpg" alt="repair-img">
+				<img class="repair__article-img" src="assets/img/image-repair-2-1.jpg" alt="repair-img">
 
-				<h4 class="repair__article-title">Overhaul</h4>
-				<ul>
-					<li>• Dismantling of old coatings</li>
-					<li>• Wallpapering</li>
-					<li>• Painting walls and ceilings</li>
-					<li>• Laying flooring</li>
-					<li>• Replacing plumbing</li>
-					<li>• Replacing sockets and switches</li>
-					<li>• Replacing doors</li>
-				</ul>
+				<div class="repair__description">
+					<h3 class="repair__article-title">Overhaul</h3>
+					<ul>
+						<li>• Dismantling of old coatings</li>
+						<li>• Wallpapering</li>
+						<li>• Painting walls and ceilings</li>
+						<li>• Laying flooring</li>
+						<li>• Replacing plumbing</li>
+						<li>• Replacing sockets and switches</li>
+						<li>• Replacing doors</li>
+					</ul>
+				</div>
 
 				<div class="repair__article-price">from 1800 rub / m2</div>
 			</article>
@@ -197,16 +199,18 @@
 			<article class="repair__article">
 				<img class="repair__article-img" src="assets/img/image-repair-3.jpg" alt="repair-img">
 
-				<h4 class="repair__article-title">Designer Repair</h4>
-				<ul>
-					<li>• Dismantling of old coatings</li>
-					<li>• Wallpapering</li>
-					<li>• Painting walls and ceilings</li>
-					<li>• Laying flooring</li>
-					<li>• Replacing plumbing</li>
-					<li>• Replacing sockets and switches</li>
-					<li>• Replacing doors</li>
-				</ul>
+				<div class="repair__description">
+					<h3 class="repair__article-title">Designer Repair</h3>
+					<ul>
+						<li>• Dismantling of old coatings</li>
+						<li>• Wallpapering</li>
+						<li>• Painting walls and ceilings</li>
+						<li>• Laying flooring</li>
+						<li>• Replacing plumbing</li>
+						<li>• Replacing sockets and switches</li>
+						<li>• Replacing doors</li>
+					</ul>
+				</div>
 
 				<div class="repair__article-price">from 4000 rub / m2</div>
 			</article>
@@ -461,7 +465,8 @@
 			<div class="map__wrap">
 				<a href="https://yandex.ru/maps/?um=constructor%3A3430e797a092c252f3a193731a02803b180305e43f20aa94def28285e3affad3&amp;source=constructorStatic"
 					target="_blank">
-					<img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A3430e797a092c252f3a193731a02803b180305e43f20aa94def28285e3affad3&amp;width=340&amp;height=255&amp;lang=ru_RU"
+					<img
+						src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A3430e797a092c252f3a193731a02803b180305e43f20aa94def28285e3affad3&amp;width=340&amp;height=255&amp;lang=ru_RU"
 						alt="" style="border: 0;" />
 				</a>
 			</div>
@@ -475,7 +480,7 @@
 
 
 
-	
+
 
 	<!-- footer -->
 	<footer class="footer">
