@@ -58,7 +58,12 @@ h2 {
 	background-color: unset;
 }
 
-.btn-primary {}
+.btn-circle {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	border-radius: 50%;
+}
 
 .btn-secondary {
 	border: 1px solid #FFFFFF;
@@ -66,7 +71,6 @@ h2 {
 }
 
 
-// header
 .header {
 	display: grid;
 	grid-template-columns: auto auto;
@@ -96,7 +100,6 @@ h2 {
 }
 
 
-// introduction
 .introduction {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -162,7 +165,6 @@ h2 {
 }
 
 
-// completed
 .completed {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -262,7 +264,6 @@ h2 {
 }
 
 
-// control
 .control {
 	display: grid;
 	padding: 27px 18px;
@@ -377,7 +378,6 @@ h2 {
 }
 
 
-// repair
 .repair {
 	position: relative;
 	top: -51px;
@@ -405,15 +405,16 @@ h2 {
 		display: grid;
 		grid-template-columns: 190px 80px 70px;
 		grid-template-rows: 223px 142px 79px 20px 20px;
-		// margin-bottom: 59px;
+
 		padding-bottom: 59px;
 
 		.repair__article-img {
 			grid-column: 1/span 3;
 			grid-row: 1/span 2;
 		}
-		.repair__article-img:nth-child(2){
-background: #E3B873;
+
+		.repair__article-img:nth-child(2) {
+			background: #E3B873;
 		}
 
 		.repair__description {
@@ -461,6 +462,70 @@ background: #E3B873;
 		}
 	}
 }
+
+
+.realize {
+	padding: 18px;
+	display: grid;
+	background: #FFFFFF;
+	position: relative;
+	bottom: 93px;
+	grid-template-rows: 92px 103px;
+}
+
+.realize__title {
+	font-family: "Yeseva One";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 30px;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #E3B873;
+}
+
+.realize__slider {
+	display: grid;
+	grid-template-columns: 14px 36px auto 36px 14px;
+	align-items: center;
+	justify-items: center;
+
+	.realize__slider-img,
+	.realize__slider-btn-left,
+	.realize__slider-btn-right {
+		grid-row: 1;
+	}
+
+	.realize__slider-img {
+		grid-column: 1/span 5;
+	}
+
+	.realize__slider-btn-left {
+		grid-column: 2;
+	}
+
+	.realize__slider-btn-right {
+		grid-column: 4;
+	}
+
+	.realize__slider-btn-left,
+	.realize__slider-btn-right {
+		height: 36px;
+		width: 36px;
+		border-radius: 50%;
+
+		img {
+			margin: 0 auto;
+			height: 12px;
+			width: 8px;
+		}
+	}
+}
+
+
+.design {}
 
 
 
