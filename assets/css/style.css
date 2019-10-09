@@ -599,13 +599,13 @@ h2 {
   background: #FFFFFF;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 108px 68px;
-      grid-template-rows: 108px 68px;
-  padding: 18px;
+  -ms-grid-rows: 100px 68px;
+      grid-template-rows: 100px 68px;
+  padding: 0 18px;
 }
 
 .repair .repair__title {
-  margin-top: 62px;
+  margin-top: 55px;
   color: #181818;
   letter-spacing: normal;
 }
@@ -690,16 +690,32 @@ h2 {
 }
 
 .realize {
-  padding: 18px;
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   background: #FFFFFF;
-  bottom: 93px;
-  -ms-grid-rows: 92px 103px;
-      grid-template-rows: 92px 103px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
-.realize__title {
+.realize .realize__inner {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  padding: 0 18px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 85px 245px;
+      grid-template-rows: 85px 245px;
+  z-index: 10;
+}
+
+.realize .realize__inner .realize__title {
   font-family: "Yeseva One";
   font-style: normal;
   font-weight: normal;
@@ -710,7 +726,7 @@ h2 {
   color: #E3B873;
 }
 
-.realize__slider {
+.realize .realize__inner .realize__slider {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 14px 36px auto 36px 14px;
@@ -721,41 +737,50 @@ h2 {
   justify-items: center;
 }
 
-.realize__slider .realize__slider-img,
-.realize__slider .realize__slider-btn-left,
-.realize__slider .realize__slider-btn-right {
+.realize .realize__inner .realize__slider .realize__slider-img,
+.realize .realize__inner .realize__slider .realize__slider-btn-left,
+.realize .realize__inner .realize__slider .realize__slider-btn-right {
   -ms-grid-row: 1;
   grid-row: 1;
 }
 
-.realize__slider .realize__slider-img {
+.realize .realize__inner .realize__slider .realize__slider-img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-column: 1/span 5;
 }
 
-.realize__slider .realize__slider-btn-left {
+.realize .realize__inner .realize__slider .realize__slider-btn-left {
   -ms-grid-column: 2;
   grid-column: 2;
 }
 
-.realize__slider .realize__slider-btn-right {
+.realize .realize__inner .realize__slider .realize__slider-btn-right {
   -ms-grid-column: 4;
   grid-column: 4;
 }
 
-.realize__slider .realize__slider-btn-left,
-.realize__slider .realize__slider-btn-right {
+.realize .realize__inner .realize__slider .realize__slider-btn-left,
+.realize .realize__inner .realize__slider .realize__slider-btn-right {
   height: 36px;
   width: 36px;
   border-radius: 50%;
 }
 
-.realize__slider .realize__slider-btn-left img,
-.realize__slider .realize__slider-btn-right img {
+.realize .realize__inner .realize__slider .realize__slider-btn-left img,
+.realize .realize__inner .realize__slider .realize__slider-btn-right img {
   margin: 0 auto;
   height: 12px;
   width: 8px;
+}
+
+.realize .realize__substrate {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  height: 123px;
+  background: #252525;
 }
 
 .map .map__wrap {
