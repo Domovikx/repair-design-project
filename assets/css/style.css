@@ -203,7 +203,7 @@ h2 {
 }
 
 .btn:hover {
-  background: #E3B87388;
+  background: peru;
 }
 
 .btn-link,
@@ -577,7 +577,7 @@ h2 {
 }
 
 .control .control__inner .control__form .btn:hover {
-  background: #E3B87388;
+  background: peru;
 }
 
 .control .control__inner .control__form .control__btn-submit {
@@ -759,16 +759,15 @@ h2 {
   grid-column: 4;
 }
 
-.realize .realize__inner .realize__slider .realize__slider-btn-left,
-.realize .realize__inner .realize__slider .realize__slider-btn-right {
+.realize .realize__inner .realize__slider .btn {
   height: 36px;
   width: 36px;
   border-radius: 50%;
+  padding: 0;
 }
 
-.realize .realize__inner .realize__slider .realize__slider-btn-left img,
-.realize .realize__inner .realize__slider .realize__slider-btn-right img {
-  margin: 0 auto;
+.realize .realize__inner .realize__slider .btn img {
+  margin: 12px auto;
   height: 12px;
   width: 8px;
 }
@@ -1097,10 +1096,54 @@ h2 {
   padding: 12px 0px;
 }
 
+.questions .questions__form .btn:hover {
+  background: peru;
+}
+
 .map .map__wrap {
   height: 255px;
   max-width: 340px;
   width: 100%;
   margin: 0 auto;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 114px 61px 38px;
+      grid-template-rows: 114px 61px 38px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.footer .footer__description {
+  font-family: "Yeseva One";
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.footer .footer__block-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer__block-buttons .btn {
+  height: 39px;
+  width: 39px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.footer .footer__block-buttons .btn img {
+  height: 17px;
+  width: 20px;
 }
 /*# sourceMappingURL=style.css.map */
