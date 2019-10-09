@@ -305,13 +305,6 @@
     </section>
 
 
-
-
-
-
-
-
-
     <!-- team -->
     <section class="team">
 
@@ -354,23 +347,18 @@
 
       <!-- team - article 2 -->
       <article class="team__article">
-          <div class="team__article-signboard">
-            <img class="team__article-icon" src="assets/svg/icon-suitcase.svg" alt="svg">
-          </div>
-          <img class="team__article-img" src="assets/img/team-3.jpg" alt="">
-          <div class="team__article-description">
-            <h3 class="team__article-name">Alexey Efimov</h3>
-            <p class="team__article-post">Foreman</p>
-            <div class="team__article-experience">Work experience 12 years</div>
-          </div>
-        </article>
-        
+        <div class="team__article-signboard">
+          <img class="team__article-icon" src="assets/svg/icon-suitcase.svg" alt="svg">
+        </div>
+        <img class="team__article-img" src="assets/img/team-3.jpg" alt="">
+        <div class="team__article-description">
+          <h3 class="team__article-name">Alexey Efimov</h3>
+          <p class="team__article-post">Foreman</p>
+          <div class="team__article-experience">Work experience 12 years</div>
+        </div>
+      </article>
+
     </section>
-
-
-
-
-
 
 
 
@@ -385,22 +373,21 @@
       <form class="questions__form" action="#">
 
         <label for="questions__form-name">Name</label>
-        <input type="text" name="name" id="questions__form-name" class="questions__form-name"
-          placeholder="What is your name:">
+        <input type="text" name="name" id="questions__form-name" placeholder="What is your name:">
 
         <label for="questions__form-tel">Phone</label>
-        <input type="tel" name="tel" id="questions__form-tel" class="questions__form-tel"
-          placeholder="Your phone number:">
+        <input type="tel" name="tel" id="questions__form-tel" placeholder="Your phone number:">
 
         <label for="questions__form-question">Question</label>
-        <input type="text" name="question" id="questions__form-question" class="questions__form-question"
-          placeholder="I want to know:">
+        <input type="text" name="question" id="questions__form-question" placeholder="I want to know:">
 
-        <input type="checkbox" name="checkbox-agree" id="questions__form-checkbox-agree"
-          class="questions__form-checkbox-agree checkbox">
-        <label for="questions__form-checkbox-agree">I agree to the processing of personal data</label>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="checkbox-agree" id="questions__form-checkbox-agree" class="checkbox-input">
+          <label class="checkbox-label" for="questions__form-checkbox-agree">I agree to the processing of personal
+            data</label>
+        </div>
 
-        <input type="submit" value="submit" class="btn">
+        <input class="questions__submit-btn btn" type="submit" value="submit">
 
       </form>
     </section>

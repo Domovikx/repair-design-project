@@ -492,7 +492,7 @@ h2 {
 }
 
 .control .control__inner .control__description {
-  font-family: FuturaBookC;
+  font-family: "FuturaBookC";
   font-size: 14px;
   text-align: center;
   color: #FFFFFF;
@@ -501,7 +501,7 @@ h2 {
 }
 
 .control .control__inner .control__form label {
-  font-family: FuturaBookC;
+  font-family: "FuturaBookC";
   font-size: 15px;
   line-height: 18px;
   color: rgba(255, 255, 255, 0.5);
@@ -509,7 +509,7 @@ h2 {
 }
 
 .control .control__inner .control__form input {
-  font-family: FuturaBookC;
+  font-family: "FuturaBookC";
   font-size: 18px;
   line-height: 138.72%;
   color: #FFFFFF;
@@ -563,7 +563,7 @@ h2 {
   background-color: #E3B873;
   color: #FFFFFF;
   border: none;
-  font-family: FuturaDemiC;
+  font-family: "FuturaDemiC";
   font-size: 13px;
   line-height: 15px;
   display: -ms-grid;
@@ -1008,6 +1008,93 @@ h2 {
   color: #FFFFFF;
   background: #E3B873;
   padding: 11px 0 13px;
+}
+
+.questions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-rows: 99px auto;
+      grid-template-rows: 99px auto;
+  padding: 0 18px;
+}
+
+.questions .questions__title {
+  font-family: "Yeseva One";
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 20px;
+  letter-spacing: 0.2px;
+}
+
+.questions .questions__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 20px 23px 83px 25px 84px 25px 45px 115px 46px;
+      grid-template-rows: 20px 23px 83px 25px 84px 25px 45px 115px 46px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.questions .questions__form label {
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.questions .questions__form input {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: 0;
+  background: unset;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.questions .questions__form ::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.questions .questions__form :-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.questions .questions__form ::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.questions .questions__form ::placeholder {
+  color: #FFFFFF;
+}
+
+.questions .questions__form .checkbox-input {
+  width: auto;
+}
+
+.questions .questions__form .checkbox-label {
+  font-family: "FuturaBookC";
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.questions .questions__form .questions__submit-btn {
+  font-family: "FuturaDemiC";
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #E3B873;
+  border: 0;
+  padding: 12px 0px;
 }
 
 .map .map__wrap {
