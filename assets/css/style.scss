@@ -504,10 +504,10 @@ h2 {
 
 		.realize__title {
 			font-family: "Yeseva One";
-			font-style: normal;
-			font-weight: normal;
+
 			font-size: 22px;
 			line-height: 30px;
+			letter-spacing: 0.2px;
 
 			text-align: center;
 			text-transform: uppercase;
@@ -564,10 +564,103 @@ h2 {
 }
 
 
+.design {
 
-.design {}
+	display: grid;
+	grid-template-rows: 78px 42px 138px auto;
+	align-items: end;
 
-.design {}
+	padding: 0 18px;
+
+	.design__title {
+		font-family: "Yeseva One";
+		font-size: 22px;
+		line-height: 30px;
+		letter-spacing: 0.2px;
+
+		text-align: center;
+		text-transform: uppercase;
+
+		color: #FFFFFF;
+	}
+
+	.design__signboard {
+		width: 114px;
+		margin: 0 auto;
+	}
+
+	.design__description {
+		font-family: FuturaBookC;
+		font-size: 15px;
+		line-height: 20px;
+
+		padding: 0 11px;
+
+		margin-top: 20px;
+		margin-bottom: auto;
+
+		text-align: center;
+
+		color: #FFFFFF;
+
+	}
+
+	.design__article {
+
+		display: grid;
+
+		grid-template-columns: 190px 80px 70px;
+		grid-template-rows: 223px auto auto 20px 20px;
+
+		.design__article-img {
+			grid-column: 1/span 3;
+			grid-row: 1/span 2;
+		}
+		margin-bottom: 62px;
+
+		.design__article-description {
+			grid-column: 1/span 2;
+			grid-row: 2/span 3;
+
+			background: #FFFFFF;
+
+			padding: 18px 0 37px 31px;
+
+			.design__article-title {
+				font-family: "Yeseva One";
+				font-size: 15px;
+				line-height: 21px;
+				color: #363636;
+				margin-bottom: 10px;
+			}
+
+			.design__article-list {
+				font-family: FuturaBookC;
+				font-size: 13px;
+				line-height: 22px;
+				color: #959595;
+			}
+		}
+
+		.design__article-price {
+			grid-column: 1/span 1;
+			grid-row: 4/span 2;
+
+			display: grid;
+			align-items: center;
+			justify-items: center;
+
+			background: #E3B873;
+			box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+
+			font-family: "Yeseva One";
+			font-size: 15px;
+			line-height: 21px;
+			text-transform: uppercase;
+			color: #FFFFFF;
+		}
+	}
+}
 
 
 
@@ -576,7 +669,7 @@ h2 {
 
 
 
-// map
+
 .map {
 	.map__wrap {
 		height: 255px;
