@@ -443,38 +443,55 @@ h2 {
 .control {
   display: -ms-grid;
   display: grid;
-  padding: 27px 18px;
-  -ms-grid-rows: 49px 70px 234px 18px 171px;
-      grid-template-rows: 49px 70px 234px 18px 171px;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
-.control .control__title {
+.control .control__inner {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  max-width: 340px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 78px 70px 234px 18px 171px;
+      grid-template-rows: 78px 70px 234px 18px 171px;
+  margin-left: 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.control .control__inner .control__title {
   color: #FFFFFF;
+  margin-top: 28px;
   font-size: 25px;
 }
 
-.control .control__img {
+.control .control__inner .control__img {
   height: 28px;
   width: 114px;
   margin: 0 auto;
-  margin-bottom: 40px;
 }
 
-.control .control__video {
+.control .control__inner .control__video {
   height: 207px;
-  width: 340px;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 28px;
 }
 
-.control .control__img-line {
+.control .control__inner .control__img-line {
   width: 55px;
   height: 1.54px;
   margin: 0 auto;
-  margin-bottom: 21px;
 }
 
-.control .control__description {
+.control .control__inner .control__description {
   font-family: FuturaBookC;
   font-size: 14px;
   text-align: center;
@@ -483,7 +500,7 @@ h2 {
   letter-spacing: 0.1px;
 }
 
-.control .control__form label {
+.control .control__inner .control__form label {
   font-family: FuturaBookC;
   font-size: 15px;
   line-height: 18px;
@@ -491,7 +508,7 @@ h2 {
   letter-spacing: 0.5px;
 }
 
-.control .control__form input {
+.control .control__inner .control__form input {
   font-family: FuturaBookC;
   font-size: 18px;
   line-height: 138.72%;
@@ -500,46 +517,46 @@ h2 {
   background: unset;
 }
 
-.control .control__form ::-webkit-input-placeholder {
+.control .control__inner .control__form ::-webkit-input-placeholder {
   color: #FFFFFF;
 }
 
-.control .control__form :-ms-input-placeholder {
+.control .control__inner .control__form :-ms-input-placeholder {
   color: #FFFFFF;
 }
 
-.control .control__form ::-ms-input-placeholder {
+.control .control__inner .control__form ::-ms-input-placeholder {
   color: #FFFFFF;
 }
 
-.control .control__form ::placeholder {
+.control .control__inner .control__form ::placeholder {
   color: #FFFFFF;
 }
 
-.control .control__form .control__form-name,
-.control .control__form .control__form-tel {
+.control .control__inner .control__form .control__form-name,
+.control .control__inner .control__form .control__form-tel {
   border-bottom: 1px solid #FFFFFF;
 }
 
-.control .control__form .control__form-name {
+.control .control__inner .control__form .control__form-name {
   margin-bottom: 63px;
 }
 
-.control .control__form .control__form-tel {
+.control .control__inner .control__form .control__form-tel {
   margin-bottom: 26px;
 }
 
-.control .control__form .control__form-checkbox-agree {
+.control .control__inner .control__form .control__form-checkbox-agree {
   width: auto;
   margin-bottom: 67px;
   letter-spacing: 0.5px;
 }
 
-.control .control__form label[for="control__form-checkbox-agree"] {
+.control .control__inner .control__form label[for="control__form-checkbox-agree"] {
   color: #FFFFFF;
 }
 
-.control .control__form .btn {
+.control .control__inner .control__form .btn {
   height: 51px;
   text-decoration: none;
   text-transform: uppercase;
@@ -559,19 +576,26 @@ h2 {
   transition: 0.2s linear;
 }
 
-.control .control__form .btn:hover {
+.control .control__inner .control__form .btn:hover {
   background: #E3B87388;
 }
 
-.control .control__form .control__btn-submit {
+.control .control__inner .control__form .control__btn-submit {
   padding-top: 5px;
   font-size: 15px;
 }
 
-.repair {
-  position: relative;
-  top: -51px;
+.control .control__substrate {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  height: 25px;
   z-index: -1;
+  background: #FFFFFF;
+}
+
+.repair {
   background: #FFFFFF;
   display: -ms-grid;
   display: grid;
@@ -670,7 +694,6 @@ h2 {
   display: -ms-grid;
   display: grid;
   background: #FFFFFF;
-  position: relative;
   bottom: 93px;
   -ms-grid-rows: 92px 103px;
       grid-template-rows: 92px 103px;

@@ -99,38 +99,41 @@
     <!-- control -->
     <section class="control">
 
-      <h2 class="control__title">online control</h2>
-      <img class="control__img" src="assets/svg/signboard-control.svg" alt="img">
+      <div class="control__inner">
 
-      <iframe class="control__video" src="https://www.youtube.com/embed/1El3jrmXjgQ"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
-      </iframe>
+        <h2 class="control__title">online control</h2>
+        <img class="control__img" src="assets/svg/signboard-control.svg" alt="img">
 
-      <img class="control__img-line" src="assets/svg/line.svg" alt="img">
+        <iframe class="control__video" src="https://www.youtube.com/embed/1El3jrmXjgQ"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+        </iframe>
 
-      <p class="control__description">
-        At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time,
-        you can go to our website and monitor the progress of work in your apartment. Y
-        ou can watch the live broadcast from one of our facilities!
-        Leave a request below and you will receive a link to the broadcast.
-      </p>
+        <img class="control__img-line" src="assets/svg/line.svg" alt="img">
 
-      <form action="#" method="get" class="control__form">
+        <p class="control__description">
+          At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time,
+          you can go to our website and monitor the progress of work in your apartment. Y
+          ou can watch the live broadcast from one of our facilities!
+          Leave a request below and you will receive a link to the broadcast.
+        </p>
 
-        <label for="control__form-name">Name</label>
-        <input type="text" name="name" id="control__form-name" class="control__form-name"
-          placeholder="What is your name:">
+        <form action="#" method="get" class="control__form">
+          <label for="control__form-name">Name</label>
+          <input type="text" name="name" id="control__form-name" class="control__form-name"
+            placeholder="What is your name:">
 
-        <label for="control__form-tel">Number</label>
-        <input type="tel" name="tel" id="control__form-tel" class="control__form-tel" placeholder="Your phone number:">
+          <label for="control__form-tel">Number</label>
+          <input type="tel" name="tel" id="control__form-tel" class="control__form-tel"
+            placeholder="Your phone number:">
 
-        <input type="checkbox" name="checkbox-agree" id="control__form-checkbox-agree"
-          class="control__form-checkbox-agree">
-        <label for="control__form-checkbox-agree">I agree to the processing of personal data</label>
+          <input type="checkbox" name="checkbox-agree" id="control__form-checkbox-agree"
+            class="control__form-checkbox-agree">
+          <label for="control__form-checkbox-agree">I agree to the processing of personal data</label>
 
-        <input class="control__btn-submit btn btn-primary" type="submit" value="submit">
-
-      </form>
+          <input class="control__btn-submit btn btn-primary" type="submit" value="submit">
+        </form>
+      </div>
+      <div class="control__substrate"></div>
     </section>
 
 
@@ -204,7 +207,7 @@
 
     </section>
 
-    
+
     <!-- realize -->
     <section class="realize">
 
@@ -221,7 +224,7 @@
           <img src="assets/svg/svg-arr-right.svg" alt="right">
         </button>
       </div>
-      <img src="assets/img/Group-64.png">
+      <img src="assets/img/Group-64.png" alt="">
     </section>
 
 
@@ -241,10 +244,10 @@
     <!-- design -->
     <section class="design">
 
-      <h2>design project</h2>
-      <img src="assets/svg/signboard-design.svg" alt="design-svg">
+      <h2 class="design__title">design project</h2>
+      <img class="design__signboard" src="assets/svg/signboard-design.svg" alt="design-svg">
 
-      <p>
+      <p class="design__description">
         Design project not only helps to make the repair
         of your apartment more modern,
         but also significantly reduces the cost of materials
@@ -257,13 +260,15 @@
 
         <img class="design__article-img" src="assets/img/image-repair-1.jpg" alt="repair-img">
 
-        <h4 class="design__article-title">Mini</h4>
-        <ul>
-          <li>• Measurement drawing</li>
-          <li>• Redevelopment</li>
-          <li>• Layout of furniture</li>
-          <li>• Plumbing plan. equipment</li>
-        </ul>
+        <div class="design__article-description">
+          <h4 class="design__article-title">Mini</h4>
+          <ul class="design__article-list">
+            <li>• Measurement drawing</li>
+            <li>• Redevelopment</li>
+            <li>• Layout of furniture</li>
+            <li>• Plumbing plan. equipment</li>
+          </ul>
+        </div>
         <div class="design__article-price">150 rub / m2</div>
 
       </article>
@@ -285,7 +290,6 @@
           <li>• Lighting plan</li>
         </ul>
         <div class="design__article-price">400 rub / m2</div>
-
       </article>
 
 
@@ -305,9 +309,7 @@
           <li>• Lighting plan...</li>
         </ul>
         <div class="design__article-price">900 rub / m2</div>
-
       </article>
-
     </section>
 
 
