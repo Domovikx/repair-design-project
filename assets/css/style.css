@@ -338,8 +338,8 @@ h2 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 85px 126px 277px 173px;
-      grid-template-rows: 85px 126px 277px 173px;
+  -ms-grid-rows: 85px 126px minmax(277px, auto) 173px;
+      grid-template-rows: 85px 126px minmax(277px, auto) 173px;
   color: #FFFFFF;
   padding: 34px 18px 0 18px;
 }
@@ -457,14 +457,16 @@ h2 {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
-  max-width: 340px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 78px 70px 234px 18px 171px;
-      grid-template-rows: 78px 70px 234px 18px 171px;
-  margin-left: 17px;
+  -ms-grid-rows: 78px 67px 234px 18px 171px;
+      grid-template-rows: 78px 67px 234px 18px 171px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: auto;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 18px;
 }
 
 .control .control__inner .control__title {
@@ -602,6 +604,9 @@ h2 {
   -ms-grid-rows: 100px 68px;
       grid-template-rows: 100px 68px;
   padding: 0 18px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .repair .repair__title {
@@ -692,30 +697,24 @@ h2 {
 .realize {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  -ms-grid-rows: 88px auto auto;
+      grid-template-rows: 88px auto auto;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  background: #FFFFFF;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  background: #FFFFFF;
 }
 
-.realize .realize__inner {
+.realize .realize__title {
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
   grid-column: 1;
-  padding: 0 18px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 85px 245px;
-      grid-template-rows: 85px 245px;
-  z-index: 10;
-}
-
-.realize .realize__inner .realize__title {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
   font-family: "Yeseva One";
   font-size: 22px;
   line-height: 30px;
@@ -725,7 +724,12 @@ h2 {
   color: #E3B873;
 }
 
-.realize .realize__inner .realize__slider {
+.realize .realize__slider {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/ span 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 14px 36px auto 36px 14px;
@@ -734,58 +738,61 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  z-index: 10;
+  padding: 0 18px;
 }
 
-.realize .realize__inner .realize__slider .realize__slider-img,
-.realize .realize__inner .realize__slider .realize__slider-btn-left,
-.realize .realize__inner .realize__slider .realize__slider-btn-right {
+.realize .realize__slider .realize__slider-img,
+.realize .realize__slider .realize__slider-btn-left,
+.realize .realize__slider .realize__slider-btn-right {
   -ms-grid-row: 1;
   grid-row: 1;
 }
 
-.realize .realize__inner .realize__slider .realize__slider-img {
+.realize .realize__slider .realize__slider-img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-column: 1/span 5;
 }
 
-.realize .realize__inner .realize__slider .realize__slider-btn-left {
+.realize .realize__slider .realize__slider-btn-left {
   -ms-grid-column: 2;
   grid-column: 2;
 }
 
-.realize .realize__inner .realize__slider .realize__slider-btn-right {
+.realize .realize__slider .realize__slider-btn-right {
   -ms-grid-column: 4;
   grid-column: 4;
 }
 
-.realize .realize__inner .realize__slider .btn {
+.realize .realize__slider .btn {
   height: 36px;
   width: 36px;
   border-radius: 50%;
   padding: 0;
 }
 
-.realize .realize__inner .realize__slider .btn img {
+.realize .realize__slider .btn img {
   margin: 12px auto;
   height: 12px;
   width: 8px;
 }
 
 .realize .realize__substrate {
-  -ms-grid-row: 1;
-  grid-row: 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/ span 2;
   -ms-grid-column: 1;
   grid-column: 1;
-  height: 123px;
+  height: 50%;
   background: #252525;
 }
 
 .design {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 78px 42px 138px auto;
-      grid-template-rows: 78px 42px 138px auto;
+  -ms-grid-rows: 80px 42px 138px auto;
+      grid-template-rows: 80px 42px 138px auto;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
@@ -808,7 +815,9 @@ h2 {
 }
 
 .design .design__description {
-  font-family: FuturaBookC;
+  max-width: 375px;
+  margin: 0 auto;
+  font-family: "FuturaBookC";
   font-size: 15px;
   line-height: 20px;
   padding: 0 11px;
@@ -825,6 +834,9 @@ h2 {
       grid-template-columns: 190px 80px 70px;
   -ms-grid-rows: 223px auto auto 20px 20px;
       grid-template-rows: 223px auto auto 20px 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 62px;
 }
 
@@ -891,8 +903,8 @@ h2 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 41px 41px 105px auto;
-      grid-template-rows: 41px 41px 105px auto;
+  -ms-grid-rows: 41px 42px 105px auto;
+      grid-template-rows: 41px 42px 105px auto;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
@@ -915,6 +927,8 @@ h2 {
 }
 
 .team .team__description {
+  max-width: 375px;
+  margin: 0 auto;
   font-family: "FuturaBookC";
   font-size: 15px;
   line-height: 20px;
@@ -932,6 +946,9 @@ h2 {
   grid-auto-columns: 35px 35px 269px;
   -ms-grid-rows: 35px 35px 242px 80px 56px;
       grid-template-rows: 35px 35px 242px 80px 56px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 55px;
 }
 
@@ -1017,6 +1034,8 @@ h2 {
   -ms-grid-rows: 99px auto;
       grid-template-rows: 99px auto;
   padding: 0 18px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .questions .questions__title {
@@ -1100,18 +1119,18 @@ h2 {
   background: peru;
 }
 
-.map .map__wrap {
-  height: 255px;
-  max-width: 340px;
-  width: 100%;
+.map {
+  display: block;
+  padding: 0 18px;
+  max-width: 650px;
   margin: 0 auto;
 }
 
 .footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 114px 61px 38px;
-      grid-template-rows: 114px 61px 38px;
+  -ms-grid-rows: 111px 61px 38px;
+      grid-template-rows: 111px 61px 38px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
@@ -1144,6 +1163,9 @@ h2 {
 
 .footer .footer__block-buttons .btn img {
   height: 17px;
-  width: 20px;
+}
+
+.footer .footer__block-buttons .footer__btn-instagram img {
+  height: 20px;
 }
 /*# sourceMappingURL=style.css.map */
