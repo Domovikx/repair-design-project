@@ -226,39 +226,142 @@ h2 {
   background-color: unset;
 }
 
+@media (min-width: 1200px) {
+  .header,
+  .main,
+  .footer {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .header {
+  height: 83px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  padding: 18px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
-  width: 100%;
-  height: 57px;
-  align-items: center;
-  justify-items: center;
+  -ms-grid-columns: minmax(10px, 82px) 180px minmax(10px, 95px) minmax(400px, 582px) minmax(10px, 67px) 126px minmax(10px, 45px) 161px minmax(10px, 100px);
+      grid-template-columns: minmax(10px, 82px) 180px minmax(10px, 95px) minmax(400px, 582px) minmax(10px, 67px) 126px minmax(10px, 45px) 161px minmax(10px, 100px);
+      grid-template-areas: ". title . nav . tel . request .";
+  padding-top: 4px;
+  background: #131313;
 }
 
 .header .header__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
   font-family: "FuturaDemiC";
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   text-transform: uppercase;
   color: #E3B873;
 }
 
-.header .btn__link {
+.header .header__nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: nav;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .btn-tel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: tel;
   font-family: "FuturaDemiC";
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #E3B873;
+  background-color: unset;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+.header .btn-tel:hover {
+  color: #FFFFFF;
+}
+
+.header .btn-request {
+  -ms-grid-row: 1;
+  -ms-grid-column: 8;
+  grid-area: request;
+  height: 37px;
+  width: 161px;
+  font-family: "FuturaDemiC";
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+}
+
+.header .btn-request:hover {
+  color: #FFFFFF;
+  background: #aa8955;
+}
+
+.header a {
+  width: auto;
+  font-family: "FuturaBookC";
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.header a:hover {
+  color: #E3B873;
+}
+
+@media (max-width: 940px) {
+  .header {
+    -ms-grid-columns: minmax(10px, 82px) 180px minmax(10px, 95px) minmax(400px, 582px) minmax(10px, 67px) 126px minmax(10px, 100px);
+        grid-template-columns: minmax(10px, 82px) 180px minmax(10px, 95px) minmax(400px, 582px) minmax(10px, 67px) 126px minmax(10px, 100px);
+        grid-template-areas: ". title . nav . tel .";
+  }
+  .header .btn-request {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  .header {
+    padding: 0;
+    background: #181818;
+    height: 57px;
+    -ms-grid-columns: minmax(10px, 18px) 180px auto 126px minmax(10px, 18px);
+        grid-template-columns: minmax(10px, 18px) 180px auto 126px minmax(10px, 18px);
+        grid-template-areas: ". title . tel .";
+  }
+  .header .header__nav {
+    display: none;
+  }
+  .header .header__title {
+    font-size: 12px;
+    line-height: 14px;
+    color: #E3B873;
+  }
+  .header .btn-tel {
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .header .btn-tel:hover {
+    color: #E3B873;
+  }
 }
 
 .introduction {
@@ -322,6 +425,7 @@ h2 {
   line-height: 135.84%;
   margin-bottom: 32px;
   padding-right: 40px;
+  max-width: 500px;
 }
 
 .introduction .introduction__inner .btn {
@@ -371,6 +475,8 @@ h2 {
   text-align: center;
   padding: 0 10px;
   letter-spacing: 0.1px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .completed .completed__slider {
