@@ -144,43 +144,41 @@
     <!-- control -->
     <section class="control">
 
-      <div class="control__inner">
+      <h2 class="control--title">online control</h2>
+      <img class="control--img" src="assets/svg/signboard-control.svg" alt="img">
 
-        <h2 class="control__title">online control</h2>
-        <img class="control__img" src="assets/svg/signboard-control.svg" alt="img">
+      <iframe class="control--video" src="https://www.youtube.com/embed/1El3jrmXjgQ"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+      </iframe>
 
-        <iframe class="control__video" src="https://www.youtube.com/embed/1El3jrmXjgQ"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
-        </iframe>
+      <img class="control--img_line" src="assets/svg/line.svg" alt="img">
 
-        <img class="control__img-line" src="assets/svg/line.svg" alt="img">
+      <p class="control--description">
+        At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
+      </p>
 
-        <p class="control__description">
-          At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time,
-          you can go to our website and monitor the progress of work in your apartment. Y
-          ou can watch the live broadcast from one of our facilities!
-          Leave a request below and you will receive a link to the broadcast.
-        </p>
+      <div class="control--substrate"></div>
 
-        <form action="#" method="get" class="control__form">
-          <label for="control__form-name">Name</label>
-          <input type="text" name="name" id="control__form-name" class="control__form-name"
-            placeholder="What is your name:">
+    </section>
 
-          <label for="control__form-tel">Number</label>
-          <input type="tel" name="tel" id="control__form-tel" class="control__form-tel"
-            placeholder="Your phone number:">
 
-          <input type="checkbox" name="checkbox-agree" id="control__form-checkbox-agree"
-            class="control__form-checkbox-agree">
-          <label for="control__form-checkbox-agree">I agree to the processing of personal data</label>
+    <!-- control__form -->
+    <section class="control_form">
+      <h2 hidden>online control form</h2>
+      <form class="form" action="#" method="get">
+        <label for="form--name">Name</label>
+        <input type="text" name="name" id="form--name" class="form--name" placeholder="What is your name:">
 
-          <input class="control__btn-submit btn btn-primary" type="submit" value="submit">
-        </form>
-      </div>
+        <label for="form--tel">Number</label>
+        <input type="tel" name="tel" id="form--tel" class="form--tel" placeholder="Your phone number:">
 
-      <div class="control__substrate"></div>
+        <input type="checkbox" name="checkbox_agree" id="form--checkbox_agree" class="form--checkbox_agree">
+        <label for="form--checkbox_agree">I agree to the processing of personal data</label>
 
+        <input class="form--btn-submit btn btn-primary" type="submit" value="submit">
+
+        <div class="form--substrate"></div>
+      </form>
     </section>
 
 
