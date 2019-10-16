@@ -856,13 +856,199 @@ h2 {
 		&--img_line {
 			margin-top: 28px;
 		}
-
 	}
 }
 
 .control_form {
-	display: none;
+	display: block;
+	padding-top: 93px;
+	background: white;
+
+	.form {
+		display: grid;
+		grid-template-columns:
+			minmax(18px, auto) minmax(150px, 231px) minmax(18px, 58px) minmax(150px, 231px) minmax(18px, 49px) minmax(100px, 200px) minmax(18px, auto);
+		grid-template-rows: 20px 31px auto;
+
+		&--name_label {
+			grid-row: 1;
+			grid-column: 2;
+			font-size: 15px;
+			line-height: 20px;
+			color: rgba(54, 54, 54, 0.5);
+		}
+
+		&--name_input {
+			grid-row: 2;
+			grid-column: 2;
+			font-family: "FuturaBookC";
+			font-size: 18px;
+			line-height: 24px;
+			color: #363636;
+			border: 0;
+			border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+			padding-bottom: 8px;
+			margin-bottom: 4px;
+		}
+
+		&--tel_label {
+			grid-row: 1;
+			grid-column: 4;
+			font-size: 15px;
+			line-height: 20px;
+			color: rgba(54, 54, 54, 0.5);
+		}
+
+		&--tel_input {
+			grid-row: 2;
+			grid-column: 4;
+			font-family: "FuturaBookC";
+			font-size: 18px;
+			line-height: 24px;
+			color: #363636;
+			border: 0;
+			border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+			padding-bottom: 8px;
+			margin-bottom: 4px;
+		}
+
+		&--btn-submit {
+			grid-row: 1/span 2;
+			grid-column: 6;
+			background: #E3B873;
+			box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+			border-radius: 2px;
+			font-size: 15px;
+			line-height: 26px;
+			color: #FFFFFF;
+		}
+
+		&--checkbox_agree_input {
+			display: none;
+		}
+
+		&--checkbox_agree_label {
+			grid-row: 3;
+			grid-column: 3/span 4;
+			padding-left: 8px;
+			padding-top: 33px;
+			font-family: "FuturaBookC";
+			font-size: 16px;
+			line-height: 22px;
+			color: #181818;
+		}
+
+		&--checkbox_agree_label:before {
+			content: " ";
+			color: #FFFFFF;
+			display: inline-block;
+			font: 12px/18px "FontAwesome";
+			margin-right: 9px;
+			margin-bottom: 4px;
+			position: relative;
+			text-align: center;
+			text-indent: 0px;
+			width: 18px;
+			height: 18px;
+			background: #E3B873;
+			border-image: initial;
+			vertical-align: middle;
+		}
+
+		.form--checkbox_agree_input:checked+.form--checkbox_agree_label:before {
+			content: "\f00c";
+		}
+
+		.form--checkbox_agree_input:disabled+.form--checkbox_agree_label:before {
+			background: #eee;
+			color: #aaa;
+		}
+	}
+
+	@media (max-width: 575px) {
+		background: #131313;
+		padding-top: 28px;
+
+		.form {
+			grid-template-columns: 18px auto 18px;
+			grid-template-rows: 16px 91px 17px 23px 114px 25px auto;
+
+			align-items: baseline;
+
+			&--name_label,
+			&--tel_label {
+				font-size: 15px;
+				line-height: 20px;
+				color: rgba(255, 255, 255, 0.5);
+			}
+
+			.form--name_input,
+			.form--tel_input {
+				background: #131313;
+				font-size: 18px;
+				line-height: 25px;
+				color: #FFFFFF;
+				padding: 0;
+				margin: 0;
+
+				border-bottom: 1px solid #FFFFFF;
+				padding-bottom: 4px;
+			}
+
+			&--checkbox_agree_label {
+				font-family: "FuturaBookC";
+				font-size: 16px;
+				line-height: 22px;
+				color: #FFFFFF;
+			}
+
+			.form--name_input::placeholder,
+			.form--tel_input::placeholder {
+				color: #FFFFFF;
+			}
+
+			&--name_label {
+				grid-row: 1;
+				grid-column: 2;
+			}
+
+			&--name_input {
+				grid-row: 2;
+				grid-column: 2;
+			}
+
+			&--tel_label {
+				grid-row: 3;
+				grid-column: 2;
+			}
+
+			&--tel_input {
+				grid-row: 4;
+				grid-column: 2;
+			}
+
+			&--checkbox_agree_label {
+				grid-row: 5;
+				grid-column: 2;
+			}
+
+			&--btn-submit {
+				grid-row: 6/span 2;
+				grid-column: 2;
+				height: 51px;
+				z-index: 10;
+			}
+
+			&--substrate {
+				grid-row: 7;
+				grid-column: 1/span 3;
+				background: #FFFFFF;
+				height: 100%;
+			}
+		}
+	}
 }
+
 
 
 .repair {

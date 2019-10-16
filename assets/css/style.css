@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Yeseva+One&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 html,
 body,
 div,
@@ -1120,7 +1121,230 @@ h2 {
 }
 
 .control_form {
+  display: block;
+  padding-top: 93px;
+  background: white;
+}
+
+.control_form .form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(18px, auto) minmax(150px, 231px) minmax(18px, 58px) minmax(150px, 231px) minmax(18px, 49px) minmax(100px, 200px) minmax(18px, auto);
+      grid-template-columns: minmax(18px, auto) minmax(150px, 231px) minmax(18px, 58px) minmax(150px, 231px) minmax(18px, 49px) minmax(100px, 200px) minmax(18px, auto);
+  -ms-grid-rows: 20px 31px auto;
+      grid-template-rows: 20px 31px auto;
+}
+
+.control_form .form--name_label {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.control_form .form--name_input {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+  border: 0;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.control_form .form--tel_label {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.control_form .form--tel_input {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+  border: 0;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.control_form .form--btn-submit {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/span 2;
+  -ms-grid-column: 6;
+  grid-column: 6;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 2px;
+  font-size: 15px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.control_form .form--checkbox_agree_input {
   display: none;
+}
+
+.control_form .form--checkbox_agree_label {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/span 4;
+  padding-left: 8px;
+  padding-top: 33px;
+  font-family: "FuturaBookC";
+  font-size: 16px;
+  line-height: 22px;
+  color: #181818;
+}
+
+.control_form .form--checkbox_agree_label:before {
+  content: " ";
+  color: #FFFFFF;
+  display: inline-block;
+  font: 12px/18px "FontAwesome";
+  margin-right: 9px;
+  margin-bottom: 4px;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  width: 18px;
+  height: 18px;
+  background: #E3B873;
+  -o-border-image: initial;
+     border-image: initial;
+  vertical-align: middle;
+}
+
+.control_form .form .form--checkbox_agree_input:checked + .form--checkbox_agree_label:before {
+  content: "\f00c";
+}
+
+.control_form .form .form--checkbox_agree_input:disabled + .form--checkbox_agree_label:before {
+  background: #eee;
+  color: #aaa;
+}
+
+@media (max-width: 575px) {
+  .control_form {
+    background: #131313;
+    padding-top: 28px;
+  }
+  .control_form .form {
+    -ms-grid-columns: 18px auto 18px;
+        grid-template-columns: 18px auto 18px;
+    -ms-grid-rows: 16px 91px 17px 23px 114px 25px auto;
+        grid-template-rows: 16px 91px 17px 23px 114px 25px auto;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .control_form .form--name_label, .control_form .form--tel_label {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .control_form .form .form--name_input,
+  .control_form .form .form--tel_input {
+    background: #131313;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 4px;
+  }
+  .control_form .form--checkbox_agree_label {
+    font-family: "FuturaBookC";
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+  .control_form .form .form--name_input::-webkit-input-placeholder,
+  .control_form .form .form--tel_input::-webkit-input-placeholder {
+    color: #FFFFFF;
+  }
+  .control_form .form .form--name_input:-ms-input-placeholder,
+  .control_form .form .form--tel_input:-ms-input-placeholder {
+    color: #FFFFFF;
+  }
+  .control_form .form .form--name_input::-ms-input-placeholder,
+  .control_form .form .form--tel_input::-ms-input-placeholder {
+    color: #FFFFFF;
+  }
+  .control_form .form .form--name_input::placeholder,
+  .control_form .form .form--tel_input::placeholder {
+    color: #FFFFFF;
+  }
+  .control_form .form--name_label {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .control_form .form--name_input {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .control_form .form--tel_label {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .control_form .form--tel_input {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .control_form .form--checkbox_agree_label {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .control_form .form--btn-submit {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 2;
+    grid-row: 6/span 2;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    height: 51px;
+    z-index: 10;
+  }
+  .control_form .form--substrate {
+    -ms-grid-row: 7;
+    grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/span 3;
+    background: #FFFFFF;
+    height: 100%;
+  }
 }
 
 .repair {
