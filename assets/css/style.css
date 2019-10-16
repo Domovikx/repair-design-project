@@ -1594,6 +1594,214 @@ h2 {
   }
 }
 
+.presentation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 435px minmax(400px, 505px) minmax(10px, 100px);
+      grid-template-columns: 400px 435px minmax(400px, 505px) minmax(10px, 100px);
+  -ms-grid-rows: 230px 510px 145px;
+      grid-template-rows: 230px 510px 145px;
+  background: #FFFFFF;
+}
+
+@media (max-width: 1301px) {
+  .presentation {
+    display: none;
+  }
+}
+
+.presentation .presentation--list {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-family: "FuturaMediumC";
+  font-size: 18px;
+  line-height: 21px;
+  color: #363636;
+}
+
+.presentation .presentation--list li:nth-child(1) {
+  padding-top: 8px;
+  padding-left: 16px;
+}
+
+.presentation .presentation--list li:nth-child(2) {
+  padding-top: 80px;
+  padding-left: 90px;
+}
+
+.presentation .presentation--list li:nth-child(3) {
+  padding-top: 140px;
+  padding-left: 113px;
+}
+
+.presentation .presentation--list li:nth-child(4) {
+  padding-top: 130px;
+  padding-left: 47px;
+}
+
+.presentation .presentation--form_presentation {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  background: #131313;
+  padding: 28px 49px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 47px 57px 27px 71px 27px 70px 28px 40px 86px;
+      grid-template-rows: 47px 57px 27px 71px 27px 70px 28px 40px 86px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.presentation .presentation--form_presentation h3 {
+  font-family: "FuturaDemiC";
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.presentation .presentation--form_presentation label {
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.presentation .presentation--form_presentation .form_presentation--name_input, .presentation .presentation--form_presentation .form_presentation--tel_input, .presentation .presentation--form_presentation .form_presentation--email_input, .presentation .presentation--form_presentation .form_presentation--checkbox_agree_input {
+  font-family: "FuturaMediumC";
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  background: inherit;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.presentation .presentation--form_presentation .form_presentation--name_input::-webkit-input-placeholder, .presentation .presentation--form_presentation .form_presentation--tel_input::-webkit-input-placeholder, .presentation .presentation--form_presentation .form_presentation--email_input::-webkit-input-placeholder, .presentation .presentation--form_presentation .form_presentation--checkbox_agree_input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.presentation .presentation--form_presentation .form_presentation--name_input:-ms-input-placeholder, .presentation .presentation--form_presentation .form_presentation--tel_input:-ms-input-placeholder, .presentation .presentation--form_presentation .form_presentation--email_input:-ms-input-placeholder, .presentation .presentation--form_presentation .form_presentation--checkbox_agree_input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.presentation .presentation--form_presentation .form_presentation--name_input::-ms-input-placeholder, .presentation .presentation--form_presentation .form_presentation--tel_input::-ms-input-placeholder, .presentation .presentation--form_presentation .form_presentation--email_input::-ms-input-placeholder, .presentation .presentation--form_presentation .form_presentation--checkbox_agree_input::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.presentation .presentation--form_presentation .form_presentation--name_input::placeholder, .presentation .presentation--form_presentation .form_presentation--tel_input::placeholder, .presentation .presentation--form_presentation .form_presentation--email_input::placeholder, .presentation .presentation--form_presentation .form_presentation--checkbox_agree_input::placeholder {
+  color: #FFFFFF;
+}
+
+.presentation .presentation--form_presentation .form_presentation--checkbox_agree_label {
+  color: #FFFFFF;
+}
+
+.presentation .presentation--form_presentation .form_presentation--btn-submit {
+  font-family: "FuturaDemiC";
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  height: 51px;
+  width: 213px;
+  margin-left: auto;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+}
+
+.presentation .presentation--form_presentation .form_presentation--checkbox_agree_input {
+  display: none;
+}
+
+.presentation .presentation--form_presentation .form_presentation--checkbox_agree_label:before {
+  content: " ";
+  color: #FFFFFF;
+  display: inline-block;
+  font: 12px/18px "FontAwesome";
+  margin-right: 9px;
+  margin-bottom: 4px;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  width: 18px;
+  height: 18px;
+  background: #E3B873;
+  -o-border-image: initial;
+     border-image: initial;
+  vertical-align: middle;
+}
+
+.presentation .presentation--form_presentation .form_presentation--checkbox_agree_input:checked + .form_presentation--checkbox_agree_label:before {
+  content: "\f00c";
+}
+
+.presentation .presentation--form_presentation .form_presentation--checkbox_agree_input:disabled + .form_presentation--checkbox_agree_label:before {
+  background: #eee;
+  color: #aaa;
+}
+
+.presentation .presentation--offer {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation .presentation--offer img {
+  height: 156px;
+  width: 123px;
+  padding-left: 13px;
+  padding-top: 20px;
+}
+
+.presentation .presentation--offer p {
+  font-size: 20px;
+  line-height: 25px;
+  color: #E3B873;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  letter-spacing: 0.5px;
+  padding-left: 6px;
+}
+
+.presentation .presentation--svg {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/span 3;
+  background-image: url("/assets/svg/presentation_ellipse.svg");
+  background-repeat: no-repeat;
+  background-position-y: 178px;
+  z-index: 10;
+}
+
+.presentation .presentation--img_bg {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/span 3;
+  background-image: url("/assets/img/presentation.png");
+  background-repeat: no-repeat;
+  background-position-y: 123px;
+}
+
 .realize {
   display: -ms-grid;
   display: grid;
