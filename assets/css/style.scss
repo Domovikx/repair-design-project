@@ -1293,7 +1293,7 @@ h2 {
 			font-family: "FuturaDemiC";
 			font-size: 20px;
 			line-height: 25px;
-			text-align: center;			
+			text-align: center;
 			color: #FFFFFF;
 		}
 
@@ -1504,8 +1504,118 @@ h2 {
 		background: #252525;
 	}
 
-	@media (min-width: 1300px) {}
+	@media (max-width: 1300px) {
+
+		.realize__list,
+		.realize__list_img {
+			display: none;
+		}
+	}
+
+	@media (min-width: 1300px) {
+		padding-top: 90px;
+
+		.realize__slider {
+			display: none;
+		}
+
+		display: grid;
+		grid-template-rows: 112px 864px 42px;
+		grid-template-columns: auto 750px 100px;
+
+		.realize__substrate {
+			grid-column: 1/span 3;
+			grid-row: 2;
+			height: 100%;
+			background-image: url("/assets/img/realize/realize-bg.jpg");
+		}
+
+		.realize__title {
+			grid-column: 1/span 3;
+			grid-row: 2;
+			background: linear-gradient(120.96deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+			z-index: 10;
+			height: 100%;
+
+			text-align: left;
+
+			font-family: "Yeseva One";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 27px;
+			line-height: 37px;
+			text-transform: uppercase;
+			color: #E3B873;
+
+			padding: 138px 0 0 100px;
+		}
+
+		.realize__list {
+			grid-column: 1/span 3;
+			grid-row: 2;
+
+			font-family: "Proxima Nova";
+			font-size: 20px;
+			line-height: 34px;
+			color: #FFFFFF;
+			z-index: 10;
+			align-self: baseline;
+
+			padding: 240px 0 0 100px;
+
+			a {
+				font-family: "Proxima Nova";
+				font-size: 20px;
+				line-height: 49px;
+				color: #FFFFFF;
+				text-decoration: none;
+				transition: .2s;
+
+				&:hover {
+					color: #E3B873;
+					padding-bottom: 4px;
+					border-bottom: 1px solid #E3B873;
+				}
+			}
+		}
+
+		.realize__list_img {
+			grid-column: 2;
+			grid-row: 1/span 3;
+			z-index: 10;
+			align-self: baseline;
+
+			display: grid;
+			grid-template-columns: auto 43px auto;
+			grid-template-rows: 75px 240px 355px auto;
+
+			li {
+				font-size: 0;
+			}
+
+			li:nth-child(1) {
+				grid-column: 1;
+				grid-row: 2;
+			}
+
+			li:nth-child(2) {
+				grid-column: 1;
+				grid-row: 4;
+			}
+
+			li:nth-child(3) {
+				grid-column: 3;
+				grid-row: 1;
+			}
+
+			li:nth-child(4) {
+				grid-column: 3;
+				grid-row: 3;
+			}
+		}
+	}
 }
+
 
 
 .design {
