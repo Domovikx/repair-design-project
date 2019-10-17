@@ -2046,13 +2046,21 @@ h2 {
 	grid-template-rows: 41px 42px 105px auto;
 	align-items: end;
 
-	padding: 0 18px;
+	padding: 65px 18px 0;
+
+	background: #181818;
+
+	.team__substrate,
+	.team__description-big,
+	.team__line {
+		display: none;
+	}
 
 	@media (min-width: 720px) {
 		grid-template-rows: 41px 42px 105px auto;
 		grid-template-columns: auto auto;
 		justify-content: space-evenly;
-		padding: 0;
+		padding: 65px 0 0;
 	}
 
 	.team__title {
@@ -2113,6 +2121,7 @@ h2 {
 
 			background: #E3B873;
 			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			z-index: 10;
 
 			.team__article-icon {
 				height: 44px;
@@ -2123,13 +2132,16 @@ h2 {
 		.team__article-img {
 			grid-column: 2/span 2;
 			grid-row: 2/span 3;
-			z-index: -1;
+			// z-index: -1;
 		}
 
 		.team__article-description {
 			grid-column: 2/span 2;
 			grid-row: 4/span 2;
 			padding: 0 41px 0 31px;
+			// margin-left: 41px;
+			// width: 233px;
+			// box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
 
 			.team__article-name {
 				font-family: "Yeseva One";
@@ -2166,12 +2178,102 @@ h2 {
 		}
 	}
 
-	.team__article:last-child {
+	.article-3 {
 		@media (min-width: 720px) {
 			grid-column: 1 / span 2;
 			justify-self: center;
 			display: grid;
 			justify-content: center;
+		}
+	}
+
+	@media (min-width: 1200px) {
+
+		display: grid;
+		grid-template-columns: minmax(0, 100%) 1fr 70px 1fr 70px 1fr minmax(0, 100%);
+		grid-template-rows: 40px 50px 100px 220px 287px 143px;
+		align-items: baseline;
+		padding-top: 91px;
+
+		%line {
+			grid-column: 1 / span 7;
+		}
+
+		.team__title {
+			@extend %line;
+			font-family: "Yeseva One";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 28px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #FFFFFF;
+		}
+
+		.team__signboard {
+			@extend %line;
+		}
+
+		.team__description {
+			@extend %line;
+			padding: 0;
+			font-family: "FuturaBookC";
+			font-size: 20px;
+			line-height: 27px;
+			text-align: center;
+			color: #FFFFFF;
+			max-width: 430px;
+		}
+
+		.team__substrate {
+			display: block;
+			@extend %line;
+			background: #FFFFFF;
+			height: 100%;
+			grid-row: 5 / span 2;
+		}
+
+		.team__line {
+			@extend %line;
+			grid-row: 5;
+			width: 55px;
+			margin: 0 auto;
+			align-self: end;
+		}
+
+		.team__description-big {
+			@extend %line;
+			grid-row: 6;
+			display: block;
+			font-family: "FuturaBookC";
+			font-size: 20px;
+			line-height: 34px;
+			text-align: center;
+			color: #363636;
+
+			max-width: 570px;
+			margin: 0 auto;
+			align-self: end;
+		}
+
+		%article_rows {
+			grid-row: 4;
+		}
+
+		.article-1 {
+			@extend %article_rows;
+			grid-column: 2;
+		}
+
+		.article-2 {
+			@extend %article_rows;
+			grid-column: 4;
+		}
+
+		.article-3 {
+			@extend %article_rows;
+			grid-column: 6;
 		}
 	}
 }
