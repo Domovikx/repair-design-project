@@ -1881,6 +1881,164 @@ h2 {
 }
 
 
+// working
+.working {
+
+	display: grid;
+	grid-template-columns: minmax(0, 100%) 475px 765px minmax(0, 100%);
+	grid-template-rows: 162px 120px 265px auto;
+
+	background: #181818;
+
+
+	&--title {
+		grid-column: 2;
+		grid-row: 1;
+
+		font-family: "FuturaDemiC";
+		font-size: 15px;
+		line-height: 21px;
+		text-transform: uppercase;
+		text-align: left;
+		color: #FFFFFF;
+
+		position: relative;
+		bottom: 30px;
+		letter-spacing: 0.1px;
+	}
+
+	&--subtitle {
+		grid-column: 2;
+		grid-row: 1;
+
+		font-family: "Yeseva One";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 27px;
+		line-height: 37px;
+		text-transform: uppercase;
+
+		color: #E3B873;
+
+		display: grid;
+		grid-template-columns: 200px auto;
+
+		p {
+			padding-top: 3px;
+		}
+
+		img {
+			width: 92px;
+			margin: 58px 0 0 12px;
+		}
+	}
+
+	&--articles {
+		grid-column: 2;
+		grid-row: 2;
+
+		.article {
+			&--title {
+				font-family: "Yeseva One";
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 23px;
+				text-transform: uppercase;
+				color: #E3B873;
+
+				max-width: 230px;
+				margin-top: 18px;
+			}
+
+			&--number {
+				font-family: "Yeseva One";
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 25px;
+				text-transform: uppercase;
+				color: #FFFFFF;
+			}
+
+			&--description {
+				font-family: "FuturaBookC";
+				font-size: 15px;
+				line-height: 25px;
+				color: #FFFFFF;
+
+				margin-top: 10px;
+				max-width: 330px;
+			}
+		}
+	}
+
+	&--pagination {
+		grid-column: 2;
+		grid-row: 4;
+
+		img {
+			width: 287px;
+		}
+	}
+
+	&--links {
+		grid-column: 3;
+		grid-row: 1/ span 2;
+		margin-top: 55px;
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 205px;
+
+		font-family: "FuturaBookC";
+		font-size: 15px;
+		line-height: 18px;
+		color: #FFFFFF66;
+
+		li {
+			max-width: 120px;
+
+			&:hover {
+				color: #FFFFFF;
+				transition: .2s;
+
+				h3 {
+					transition: .6s;
+					border-bottom: 1px solid #E3B873;
+				}
+			}
+		}
+
+		h3 {
+			font-family: "Yeseva One";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 25px;
+			text-transform: uppercase;
+
+			border-bottom: 1px solid #E3B87366;
+			display: inline;
+		}
+
+		p {
+			margin-top: 10px;
+		}
+	}
+
+	&--image {
+		grid-column: 3;
+		grid-row: 3/span 2;
+	}
+
+	@media (max-width: 1300px) {
+		display: none;
+	}
+}
+
+
 // team
 .team {
 	display: grid;
