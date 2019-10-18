@@ -3140,6 +3140,8 @@ h2 {
     width: 200px;
     -ms-grid-column-align: center;
         justify-self: center;
+    -webkit-box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+            box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
   }
   .questions .questions__substrate {
     -ms-grid-row: 2;
@@ -3176,6 +3178,74 @@ h2 {
   }
 }
 
+.address {
+  display: none;
+}
+
+@media (min-width: 1190px) {
+  .address {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 77px auto;
+        grid-template-rows: 77px auto;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
+    padding-top: 50px;
+  }
+  .address--description {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/span 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+  }
+  .address--btn-mail {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column-align: right;
+        justify-self: right;
+  }
+  .address--btn-instagram {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .address--btn-mail, .address--btn-instagram {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+  }
+  .address--btn-mail img, .address--btn-instagram img {
+    height: 14px;
+    width: 14px;
+  }
+}
+
+.lower_menu {
+  display: none;
+  height: 133px;
+}
+
+@media (min-width: 1190px) {
+  .lower_menu {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
 .footer {
   display: -ms-grid;
   display: grid;
@@ -3184,6 +3254,7 @@ h2 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  background: #181818;
 }
 
 .footer .footer__description {
@@ -3217,5 +3288,11 @@ h2 {
 
 .footer .footer__block-buttons .footer__btn-instagram img {
   height: 20px;
+}
+
+@media (min-width: 1190px) {
+  .footer {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
