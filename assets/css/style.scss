@@ -2132,16 +2132,12 @@ h2 {
 		.team__article-img {
 			grid-column: 2/span 2;
 			grid-row: 2/span 3;
-			// z-index: -1;
 		}
 
 		.team__article-description {
 			grid-column: 2/span 2;
 			grid-row: 4/span 2;
 			padding: 0 41px 0 31px;
-			// margin-left: 41px;
-			// width: 233px;
-			// box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
 
 			.team__article-name {
 				font-family: "Yeseva One";
@@ -2418,12 +2414,13 @@ h2 {
 	display: grid;
 	align-self: start;
 	grid-template-rows: 99px auto;
-	padding: 0 18px;
-
-	max-width: 450px;
-	margin: 0 auto;
+	grid-template-columns: minmax(15px, 100%) minmax(340px, 450px) minmax(15px, 100%);
+	background: #181818;
 
 	.questions__title {
+		grid-column: 2;
+		grid-row: 1;
+
 		font-family: "Yeseva One";
 		font-size: 20px;
 		line-height: 28px;
@@ -2435,6 +2432,10 @@ h2 {
 	}
 
 	.questions__form {
+		grid-column: 2;
+		grid-row: 2;
+
+
 		display: grid;
 		grid-template-rows: 20px 23px 83px 25px 84px 25px 45px 115px 46px;
 		align-items: end;
@@ -2471,6 +2472,38 @@ h2 {
 			color: #FFFFFF;
 		}
 
+
+		.checkbox-input {
+			display: none;
+		}
+
+		.checkbox-label:before {
+			content: " ";
+			color: #FFFFFF;
+			display: inline-block;
+			font: 12px/18px "FontAwesome";
+			margin-right: 9px;
+			margin-bottom: 4px;
+			position: relative;
+			text-align: center;
+			text-indent: 0px;
+			width: 18px;
+			height: 18px;
+			background: #E3B873;
+			border-image: initial;
+			vertical-align: middle;
+		}
+
+		.checkbox-input:checked+.checkbox-label:before {
+			content: "\f00c";
+		}
+
+		.checkbox-input:disabled+.checkbox-label:before {
+			background: #eee;
+			color: #aaa;
+		}
+
+
 		.questions__submit-btn {
 			font-family: "FuturaDemiC";
 			font-size: 15px;
@@ -2487,14 +2520,109 @@ h2 {
 			}
 		}
 	}
+
+	.questions__substrate {
+		display: none;
+	}
+
+	@media (min-width: 1190px) {
+
+		grid-template-rows: 222px auto;
+		grid-template-columns: minmax(15px, 100%) 880px minmax(15px, 100%);
+
+		padding-top: 130px;
+		background: #FFFFFF;
+
+		.questions__title {
+			background: #181818;
+			margin: 0;
+			padding-top: 35px;
+		}
+
+		.questions__form {
+			background: #181818;
+			grid-row: 1/span 2;
+			z-index: 10;
+			margin-top: 60px;
+
+			display: grid;
+			grid-template-columns: auto 231px 58px 231px auto;
+			grid-template-rows: 65px 25px 70px 25px 70px 97px 35px;
+
+			&-name-label {
+				grid-column: 2;
+				grid-row: 1;
+			}
+
+			&-name-input {
+				grid-column: 2;
+				grid-row: 2;
+			}
+
+			&-tel-label {
+				grid-column: 4;
+				grid-row: 1;
+			}
+
+			&-tel-input {
+				grid-column: 4;
+				grid-row: 2;
+			}
+
+			&-question-label {
+				grid-column: 2/span 3;
+				grid-row: 3;
+			}
+
+			&-question-input {
+				grid-column: 2/span 3;
+				grid-row: 4;
+			}
+
+			.checkbox-wrapper {
+				grid-column: 2/span 3;
+				grid-row: 5;
+				max-width: 290px;
+				width: 100%;
+				margin: 0 auto;
+			}
+
+			.questions__submit-btn {
+				grid-column: 2/span 3;
+				grid-row: 6;
+				width: 200px;
+				justify-self: center;
+			}
+		}
+
+		.questions__substrate {
+			grid-row: 2;
+			grid-column: 1/ span 3;
+			display: block;
+
+			height: 100%;
+			background: #252525;
+		}
+
+	}
 }
 
 
 .map {
-	display: block;
-	padding: 0 18px;
-	max-width: 650px;
-	margin: 0 auto;
+	display: grid;
+	grid-template-columns: minmax(18px, auto) auto minmax(18px, auto);
+	background: #181818;
+
+	a {
+		grid-column: 2;
+		justify-self: center;
+		max-width: 650px;
+		width: 100%;
+	}
+
+	@media (min-width: 1190px) {
+		background: #252525;
+	}
 }
 
 

@@ -169,12 +169,15 @@
       <h2 hidden>online control form</h2>
       <form class="form" action="#" method="get">
         <label class="form--name_label" for="form--name_input">Name</label>
-        <input class="form--name_input" id="form--name_input" type="text" name="name" placeholder="What is your name:">
+        <input required class="form--name_input" id="form--name_input" type="text" name="name"
+          placeholder="What is your name:">
 
         <label class="form--tel_label" for="form--tel_input">Phone</label>
-        <input class="form--tel_input" id="form--tel_input" type="tel" name="tel" placeholder="Your phone number:">
+        <input required class="form--tel_input" id="form--tel_input" type="tel" name="tel"
+          placeholder="Your phone number:">
 
-        <input class="form--checkbox_agree_input" id="form--checkbox_agree_input" type="checkbox" name="checkbox_agree">
+        <input required class="form--checkbox_agree_input" id="form--checkbox_agree_input" type="checkbox"
+          name="checkbox_agree">
         <label class="form--checkbox_agree_label" for="form--checkbox_agree_input">I agree to the processing of personal
           data</label>
 
@@ -279,21 +282,21 @@
 
 
         <label class="form_presentation--name_label" for="form_presentation--name_input">Name</label>
-        <input class="form_presentation--name_input" id="form_presentation--name_input" type="text" name="name"
+        <input required class="form_presentation--name_input" id="form_presentation--name_input" type="text" name="name"
           placeholder="What is your name:">
 
 
         <label class="form_presentation--tel_label" for="form_presentation--tel_input">Phone</label>
-        <input class="form_presentation--tel_input" id="form_presentation--tel_input" type="tel" name="tel"
+        <input required class="form_presentation--tel_input" id="form_presentation--tel_input" type="tel" name="tel"
           placeholder="Your phone number:">
 
 
         <label class="form_presentation--email_label" for="form_presentation--email_input">Email</label>
-        <input class="form_presentation--email_input" id="form_presentation--email_input" type="email" name="email"
-          placeholder="Your email">
+        <input required class="form_presentation--email_input" id="form_presentation--email_input" type="email"
+          name="email" placeholder="Your email">
 
 
-        <input class="form_presentation--checkbox_agree_input" id="form_presentation--checkbox_agree_input"
+        <input required class="form_presentation--checkbox_agree_input" id="form_presentation--checkbox_agree_input"
           type="checkbox" name="checkbox_agree">
         <label class="form_presentation--checkbox_agree_label" for="form_presentation--checkbox_agree_input">
           I agree to the processing of personal data</label>
@@ -665,24 +668,26 @@
 
       <form class="questions__form" action="#">
 
-        <label for="questions__form-name">Name</label>
-        <input type="text" name="name" id="questions__form-name" placeholder="What is your name:">
+        <label class="questions__form-name-label" for="questions__form-name">Name</label>
+        <input required class="questions__form-name-input" type="text" name="name" id="questions__form-name" placeholder="What is your name:">
 
-        <label for="questions__form-tel">Phone</label>
-        <input type="tel" name="tel" id="questions__form-tel" placeholder="Your phone number:">
+        <label class="questions__form-tel-label"  for="questions__form-tel">Phone</label>
+        <input required class="questions__form-tel-input" type="tel" name="tel" id="questions__form-tel" placeholder="Your phone number:">
 
-        <label for="questions__form-question">Question</label>
-        <input type="text" name="question" id="questions__form-question" placeholder="I want to know:">
+        <label class="questions__form-question-label" for="questions__form-question">Question</label>
+        <input required class="questions__form-question-input" type="text" name="question" id="questions__form-question" placeholder="I want to know:">
 
         <div class="checkbox-wrapper">
-          <input type="checkbox" name="checkbox-agree" id="questions__form-checkbox-agree" class="checkbox-input">
+          <input required class="checkbox-input" type="checkbox" name="checkbox-agree"
+            id="questions__form-checkbox-agree">
           <label class="checkbox-label" for="questions__form-checkbox-agree">I agree to the processing of personal
             data</label>
         </div>
 
         <input class="questions__submit-btn btn" type="submit" value="submit">
-
       </form>
+
+      <div class="questions__substrate"></div>
     </section>
 
 
