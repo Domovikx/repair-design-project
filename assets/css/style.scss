@@ -2613,6 +2613,10 @@ h2 {
 	grid-template-columns: minmax(18px, auto) auto minmax(18px, auto);
 	background: #181818;
 
+	.map--img-big {
+		display: none;
+	}
+
 	a {
 		grid-column: 2;
 		justify-self: center;
@@ -2622,6 +2626,22 @@ h2 {
 
 	@media (min-width: 1190px) {
 		background: #252525;
+
+		padding-top: 45px;
+		padding-bottom: 64px;
+
+		a {
+			max-width: 925px;
+			width: 100%;
+		}
+
+		.map--img-big {
+			display: block;
+		}
+
+		.map--img-small {
+			display: none;
+		}
 	}
 }
 
