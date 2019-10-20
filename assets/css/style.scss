@@ -921,6 +921,11 @@ h2 {
 			font-size: 15px;
 			line-height: 26px;
 			color: #FFFFFF;
+
+			&:hover {
+				background: #aa8955;
+			}
+
 		}
 
 		&--checkbox_agree_input {
@@ -1352,6 +1357,10 @@ h2 {
 
 			background: #E3B873;
 			box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+
+			&:hover {
+				background: #aa8955;
+			}
 		}
 
 		.form_presentation--checkbox_agree_input {
@@ -2358,7 +2367,7 @@ h2 {
 			box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 		}
 
-		&--property {
+		.article--property {
 			grid-row: 3/ span 2;
 			grid-column: 1/ span 2;
 
@@ -2388,6 +2397,40 @@ h2 {
 				height: 32px;
 				width: 32px;
 				margin-left: 20px;
+			}
+
+			.line_horizontal {
+				grid-row: 1;
+				grid-column: 3;
+				border-left: 1px solid #FFFFFF;
+				height: 100%;
+			}
+
+			$grid_row: 1;
+
+			.img-1 {
+				grid-row: $grid_row;
+				grid-column: 1;
+			}
+
+			.meters {
+				grid-row: $grid_row;
+				grid-column: 2;
+			}
+
+			.img-2 {
+				grid-row: $grid_row;
+				grid-column: 3;
+			}
+
+			.days {
+				grid-row: $grid_row;
+				grid-column: 4;
+			}
+
+			.line_horizontal {
+				grid-row: $grid_row;
+				grid-column: 3;
 			}
 		}
 	}
