@@ -13,10 +13,6 @@ body {
 	font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
 	background: #252525;
 
-	// @media (max-width: 600px) {
-	// 	background: #252525;
-	// }
-
 	font-size: 14px;
 }
 
@@ -314,7 +310,7 @@ h2 {
 		.introduction__img-bg {
 			grid-column: 1/ span 4;
 			grid-row: 1/ span 5;
-			background-image: url("/assets/img/bg-001.jpg");
+			background-image: url("../img/bg-001.jpg");
 			background-position: 0;
 			background-size: cover;
 			height: inherit;
@@ -1421,7 +1417,7 @@ h2 {
 	.presentation--svg {
 		grid-column: 1/span 2;
 		grid-row: 1/span 3;
-		background-image: url("/assets/svg/presentation_ellipse.svg");
+		background-image: url("../svg/presentation_ellipse.svg");
 		background-repeat: no-repeat;
 		background-position-y: 178px;
 		z-index: 10;
@@ -1430,7 +1426,7 @@ h2 {
 	.presentation--img_bg {
 		grid-column: 1/span 2;
 		grid-row: 1/span 3;
-		background-image: url("/assets/img/presentation.png");
+		background-image: url("../img/presentation.png");
 		background-repeat: no-repeat;
 		background-position-y: 123px;
 	}
@@ -1536,7 +1532,7 @@ h2 {
 			grid-column: 1/span 3;
 			grid-row: 2;
 			height: 100%;
-			background-image: url("/assets/img/realize/realize-bg.jpg");
+			background-image: url("../img/realize/realize-bg.jpg");
 		}
 
 		.realize__title {
